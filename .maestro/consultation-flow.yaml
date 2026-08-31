@@ -1,0 +1,18 @@
+appId: org.reactjs.native.example.AmrutamSuperApp
+---
+# End-to-end: Consultation booking flow
+- launchApp
+- tapOn:
+    text: "Consult"
+- assertVisible: "Consultations"
+- tapOn:
+    id: "search"
+    optional: true
+- scroll
+- tapOn:
+    text: "Dr."
+    index: 0
+- assertVisible: "Available Slots"
+- tapOn:
+    text: "Book Consultation"
+    optional: true
